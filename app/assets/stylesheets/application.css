@@ -11,3 +11,22 @@
  *= require_self
  *= require_tree .
  */
+.mualik {
+	border: 1px solid #666;
+	border-radius: 10px;
+	margin: 100px auto 0 auto;
+	height: 310px;
+	padding-top: 40px;
+}
+
+.photo {
+	margin-top: 12px;
+}
+
+.info {
+	margin-top: 52px;
+}
+
+footer {
+	margin-top: 100px; 
+}
