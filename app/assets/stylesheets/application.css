@@ -11,10 +11,15 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	padding-top: 50px;
+}
+
 .mualik {
-	border: 1px solid #666;
+	border: 1px solid #ccc;
 	border-radius: 10px;
-	margin: 100px auto 0 auto;
+	margin: 50px auto 0 auto;
 	height: 310px;
 	padding-top: 40px;
 }
@@ -29,4 +34,15 @@
 
 footer {
 	margin-top: 100px; 
+}
+
+.likes {
+	margin-top: 10px;
+}
+
+.navpills {
+	/*float: none;*/
+	/*display: block;*/
+	width: 75%;
+	position: relative;
 }

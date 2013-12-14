@@ -1,4 +1,10 @@
 Mualik::Application.routes.draw do
+  resources :histories
+
+  resources :users
+
+  resources :cards
+
   get "home/index"
 
   root "home#index"

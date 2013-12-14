@@ -1,12 +1,11 @@
-<div class="container">
-	
-	<div class="col-lg-12 clearfix">
+<% @cards.each do |card| %>
+  	<div class="col-lg-12 clearfix">
 		<div class="mualik col-lg-5 col-lg-push-3">
 			
-			<div class="col-lg-12 clearfix">
+			<div class="col-lg-12">
 				<div class="col-lg-5">
 					<!-- <img src="/images/mualik1.jpg"> -->
-					<%= image_tag "mualik1.jpg", {class: "img-responsive photo"} %>
+					<%= image_tag card.photo_url, {class: "img-responsive photo"} %>
 				</div>
 
 				<div class="col-lg-7">
@@ -14,74 +13,19 @@
 						<h4 class="text-right">ЖЕКЕ МУӘЛІК</h4>
 					</div>
 					<div class="col-lg-12 clearfix info">
-						<h6>ТЕГІ</h6>
-						<h5>ФЕЙСБУКБАЕВ</h5>
-						<h6>АТЫ</h6>
-						<h5>ТВИТТЕРБЕК</h5>
-						<h6>ӘКЕСІНІҢ АТЫ</h6>
-						<h5>ВКОНТАКТЬЕВИЧ</h5>
+						<h6 class="text-muted">ТЕГІ</h6>
+						<h5><%= card.last_name %></h5>
+						<h6 class="text-muted">АТЫ</h6>
+						<h5><%= card.first_name %></h5>
+						<h6 class="text-muted">ӘКЕСІНІҢ АТЫ</h6>
+						<h5><%= card.middle_name %></h5>
 					</div>
+				</div>
+				<div class="col-lg-3 col-lg-push-9 likes text-right">
+					<span><a href="#">:)))</a> <%= card.likes %></span>
 				</div>
 			</div>
 
 		</div>
 	</div>
-
-	<div class="col-lg-12 clearfix">
-		<div class="mualik col-lg-5 col-lg-push-3">
-			
-			<div class="col-lg-12 clearfix">
-				<div class="col-lg-5">
-					<!-- <img src="/images/mualik1.jpg"> -->
-					<%= image_tag "mualik1.jpg", {class: "img-responsive photo"} %>
-				</div>
-
-				<div class="col-lg-7">
-					<div class="col-lg-10 col-lg-push-1">
-						<h4 class="text-right">ЖЕКЕ МУӘЛІК</h4>
-					</div>
-					<div class="col-lg-12 clearfix info">
-						<h6>ТЕГІ</h6>
-						<h5>ФЕЙСБУКБАЕВ</h5>
-						<h6>АТЫ</h6>
-						<h5>ТВИТТЕРБЕК</h5>
-						<h6>ӘКЕСІНІҢ АТЫ</h6>
-						<h5>ВКОНТАКТЬЕВИЧ</h5>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="col-lg-12 clearfix">
-		<div class="mualik col-lg-5 col-lg-push-3">
-			
-			<div class="col-lg-12 clearfix">
-				<div class="col-lg-5">
-					<!-- <img src="/images/mualik1.jpg"> -->
-					<%= image_tag "mualik1.jpg", {class: "img-responsive photo"} %>
-				</div>
-
-				<div class="col-lg-7">
-					<div class="col-lg-10 col-lg-push-1">
-						<h4 class="text-right">ЖЕКЕ МУӘЛІК</h4>
-					</div>
-					<div class="col-lg-12 clearfix info">
-						<h6>ТЕГІ</h6>
-						<h5>ФЕЙСБУКБАЕВ</h5>
-						<h6>АТЫ</h6>
-						<h5>ТВИТТЕРБЕК</h5>
-						<h6>ӘКЕСІНІҢ АТЫ</h6>
-						<h5>ВКОНТАКТЬЕВИЧ</h5>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-</div>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- <script src="js/bootstrap.min.js"></script> -->
+<% end %>
