@@ -18,7 +18,7 @@ class HistoriesControllerTest < ActionController::TestCase
 
   test "should create history" do
     assert_difference('History.count') do
-      post :create, history: {  card_id: @history. card_id, user_id: @history.user_id }
+      post :create, history: {  card_id: @history.card_id, user_id: @history.user_id }
     end
 
     assert_redirected_to history_path(assigns(:history))
@@ -35,7 +35,7 @@ class HistoriesControllerTest < ActionController::TestCase
   end
 
   test "should update history" do
-    patch :update, id: @history, history: {  card_id: @history. card_id, user_id: @history.user_id }
+    patch :update, id: @history, history: {  card_id: @history.card_id, user_id: @history.user_id }
     assert_redirected_to history_path(assigns(:history))
   end
 

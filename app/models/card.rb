@@ -1,4 +1,6 @@
 class Card < ActiveRecord::Base
+	validates :first_name, :last_name, :middle_name, :photo_url, presence: true
+
 	before_save :make_uppercase
 
 	def make_uppercase

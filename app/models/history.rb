@@ -1,4 +1,6 @@
 class History < ActiveRecord::Base
-  belongs_to : card
-  belongs_to :user
+	validates :card, :user, presence: true
+
+	belongs_to :card
+	belongs_to :user
 end

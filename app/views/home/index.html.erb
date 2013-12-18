@@ -22,7 +22,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-lg-push-9 likes text-right">
-					<span><a href="#">:)))</a> <%= card.likes %></span>
+					<%= link_to ':)))', like_path(card), remote: true %>&nbsp;<span id="s<%= card.id %>"><%= card.likes %></span>
 				</div>
 			</div>
 
